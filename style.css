@@ -1,0 +1,94 @@
+/* Define CSS variables */
+:root{
+    --color: tomato;
+    --background-color:  #0d1117;
+    --container-color:  #161b22;
+    --shadow-color:  rgba(0, 0, 0, 0.2);;
+    --fade-color: #d9d9d9d6;
+    --grey-color: #7d8590;
+    --font-size: 24px;
+    --fsmall-size: 16px;
+    --fFamily: "Poppins", sans-serif;
+}
+/* Reset default styles and set fonts */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fFamily);
+  }
+  body {
+    background-color: var(--background-color);
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: var(--fade-color);
+    border-bottom: 1px solid var(--color);
+  }
+  .container {
+    width: 80vmin;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 140px;
+    background-color: var(--container-color);
+    box-shadow: 0 20px 40px var(--shadow-color);
+  }
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  h3 {
+    background-color: var(--background-color);
+    color: var(--grey-color);
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+  }
+  .tab-content {
+    background-color: var(--background-color);
+    padding: 50px 40px;
+  }
+  .tab-content h4 {
+    font-size: var(--font-size);
+    margin-bottom: 20px;
+    color: var(--fade-color);
+    font-weight: 600;
+  }
+  .tab-content h4 span{
+    color: var(--grey-color);
+  }
+  .tab-content p {
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+    color: var(--color);
+  }
+  .tab-content div {
+    display: none;
+  }
+  .tab-content .active {
+    display: block;
+  }
+  .tabs .active {
+    background-color: var(--background-color);
+    color: var(--color);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+                                         /* Major_Developer  */
